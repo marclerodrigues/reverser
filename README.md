@@ -1,8 +1,11 @@
 # Reverser
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/reverser`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is a string reverser proposed by Zoomer as a test.
 
-TODO: Delete this and the text above, and describe your gem
+# Proposed Solution
+
+Create a Reverser module with a revert function that accepts a string as parameter and otherwise it returns what was given as input.
+If the parameter passed is a String it will split the string using as parameter a single space, then it reverses the resultant array and joins the result with a single space returning a new string.
 
 ## Installation
 
@@ -22,7 +25,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'reverser' #Require the gem
+
+Reverser.revert("the big black cat.") #Call the revert function at Reverser module
+=> "cat black big the"
+```
 
 ## Development
 
@@ -32,10 +40,14 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/reverser.
+1. Fork it ( https://github.com/marclerodrigues/reverser/fork )
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
 
+Bug reports and pull requests are welcome on GitHub at https://github.com/marclerodrigues/reverser.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
